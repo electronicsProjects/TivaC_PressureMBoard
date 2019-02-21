@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PressureMBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/PressureMBoard-rescue.lib)(options "")(descr ""))
+)

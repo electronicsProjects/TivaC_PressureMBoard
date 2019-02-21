@@ -1,0 +1,395 @@
+EESchema Schematic File Version 4
+LIBS:PressureMBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PressureMBoard-rescue:MCP6002 U1
+U 1 1 5BBBBC07
+P 6200 4000
+F 0 "U1" H 6200 4150 50  0000 L CNN
+F 1 "MCP6002" H 6200 3850 50  0000 L CNN
+F 2 "" H 6100 4050 50  0000 C CNN
+F 3 "" H 6200 4150 50  0000 C CNN
+	1    6200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5BC8ED5C
+P 5150 3250
+F 0 "#PWR01" H 5150 3100 50  0001 C CNN
+F 1 "+5V" H 5150 3390 50  0000 C CNN
+F 2 "" H 5150 3250 50  0000 C CNN
+F 3 "" H 5150 3250 50  0000 C CNN
+	1    5150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PressureMBoard-rescue:R R1
+U 1 1 5BC8ED7A
+P 5150 3700
+F 0 "R1" V 5230 3700 50  0000 C CNN
+F 1 "10K" V 5150 3700 50  0000 C CNN
+F 2 "" V 5080 3700 50  0000 C CNN
+F 3 "" H 5150 3700 50  0000 C CNN
+F 4 "Value" H 5150 3700 60  0001 C CNN "Digikey#"
+F 5 "Value" H 5150 3700 60  0001 C CNN "LibPart"
+F 6 "Value" H 5150 3700 60  0001 C CNN "Manf"
+F 7 "Value" H 5150 3700 60  0001 C CNN "Manf#"
+F 8 "Value" H 5150 3700 60  0001 C CNN "Mouser#"
+	1    5150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L PressureMBoard-rescue:R R2
+U 1 1 5BC8EDA5
+P 5150 4150
+F 0 "R2" V 5230 4150 50  0000 C CNN
+F 1 "20K" V 5150 4150 50  0000 C CNN
+F 2 "" V 5080 4150 50  0000 C CNN
+F 3 "" H 5150 4150 50  0000 C CNN
+F 4 "Value" H 5150 4150 60  0001 C CNN "Digikey#"
+F 5 "Value" H 5150 4150 60  0001 C CNN "LibPart"
+F 6 "Value" H 5150 4150 60  0001 C CNN "Manf"
+F 7 "Value" H 5150 4150 60  0001 C CNN "Manf#"
+F 8 "Value" H 5150 4150 60  0001 C CNN "Mouser#"
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5BC8EE04
+P 5150 4600
+F 0 "#PWR02" H 5150 4350 50  0001 C CNN
+F 1 "GND" H 5150 4450 50  0000 C CNN
+F 2 "" H 5150 4600 50  0000 C CNN
+F 3 "" H 5150 4600 50  0000 C CNN
+	1    5150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3250 5150 3300
+Wire Wire Line
+	5150 4000 5150 3900
+Wire Wire Line
+	5150 4600 5150 4500
+$Comp
+L PressureMBoard-rescue:C_Small C1
+U 1 1 5BC8FB34
+P 4700 3600
+F 0 "C1" H 4710 3670 50  0000 L CNN
+F 1 "0.1u" H 4710 3520 50  0000 L CNN
+F 2 "" H 4700 3600 50  0000 C CNN
+F 3 "" H 4700 3600 50  0000 C CNN
+F 4 "Value" H 4700 3600 60  0001 C CNN "Digikey#"
+F 5 "Value" H 4700 3600 60  0001 C CNN "LibPart"
+F 6 "Value" H 4700 3600 60  0001 C CNN "Manf"
+F 7 "Value" H 4700 3600 60  0001 C CNN "Manf#"
+F 8 "Value" H 4700 3600 60  0001 C CNN "Mouser#"
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PressureMBoard-rescue:C_Small C2
+U 1 1 5BC8FBB3
+P 5450 3600
+F 0 "C2" H 5460 3670 50  0000 L CNN
+F 1 "0.001u" H 5460 3520 50  0000 L CNN
+F 2 "" H 5450 3600 50  0000 C CNN
+F 3 "" H 5450 3600 50  0000 C CNN
+F 4 "Value" H 5450 3600 60  0001 C CNN "Digikey#"
+F 5 "Value" H 5450 3600 60  0001 C CNN "LibPart"
+F 6 "Value" H 5450 3600 60  0001 C CNN "Manf"
+F 7 "Value" H 5450 3600 60  0001 C CNN "Manf#"
+F 8 "Value" H 5450 3600 60  0001 C CNN "Mouser#"
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR03
+U 1 1 5BC8FC68
+P 6100 4400
+F 0 "#PWR03" H 6100 4150 50  0001 C CNN
+F 1 "GNDA" H 6100 4250 50  0000 C CNN
+F 2 "" H 6100 4400 50  0000 C CNN
+F 3 "" H 6100 4400 50  0000 C CNN
+	1    6100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4400 6100 4350
+Wire Wire Line
+	5900 4100 5500 4100
+Wire Wire Line
+	5500 4100 5500 4650
+Wire Wire Line
+	5500 4650 6700 4650
+Wire Wire Line
+	6700 4650 6700 4000
+Wire Wire Line
+	6700 4000 6500 4000
+Wire Wire Line
+	6100 3250 6100 3700
+Wire Wire Line
+	5450 3400 5450 3500
+Wire Wire Line
+	4700 3400 5150 3400
+Connection ~ 5150 3400
+Wire Wire Line
+	4700 3400 4700 3500
+$Comp
+L power:GND #PWR04
+U 1 1 5BC8FCF1
+P 5450 3800
+F 0 "#PWR04" H 5450 3550 50  0001 C CNN
+F 1 "GND" H 5450 3650 50  0000 C CNN
+F 2 "" H 5450 3800 50  0000 C CNN
+F 3 "" H 5450 3800 50  0000 C CNN
+	1    5450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5BC8FD0F
+P 4700 3800
+F 0 "#PWR05" H 4700 3550 50  0001 C CNN
+F 1 "GND" H 4700 3650 50  0000 C CNN
+F 2 "" H 4700 3800 50  0000 C CNN
+F 3 "" H 4700 3800 50  0000 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3800 5450 3700
+Wire Wire Line
+	4700 3800 4700 3700
+Wire Wire Line
+	5150 3900 5250 3900
+Wire Wire Line
+	5250 3900 5250 4050
+Wire Wire Line
+	5250 4050 5700 4050
+Wire Wire Line
+	5700 4050 5700 3900
+Wire Wire Line
+	5700 3900 5900 3900
+Connection ~ 5150 3900
+Text Notes 5600 3850 0    60   ~ 0
+3,3v 
+Text Notes 4250 3000 0    60   ~ 0
+0 - 4.95V provenientes\ndel sensor de presión.
+$Comp
+L power:+5V #PWR06
+U 1 1 5BC8FF9B
+P 6100 3250
+F 0 "#PWR06" H 6100 3100 50  0001 C CNN
+F 1 "+5V" H 6100 3390 50  0000 C CNN
+F 2 "" H 6100 3250 50  0000 C CNN
+F 3 "" H 6100 3250 50  0000 C CNN
+	1    6100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5BC9003A
+P 4250 3300
+F 0 "#FLG07" H 4250 3395 50  0001 C CNN
+F 1 "PWR_FLAG" H 4250 3480 50  0000 C CNN
+F 2 "" H 4250 3300 50  0000 C CNN
+F 3 "" H 4250 3300 50  0000 C CNN
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3300 4250 3400
+Wire Wire Line
+	4250 3400 4550 3400
+Wire Wire Line
+	4550 3400 4550 3300
+Wire Wire Line
+	4550 3300 5150 3300
+Connection ~ 5150 3300
+$Comp
+L power:PWR_FLAG #FLG08
+U 1 1 5BC900A3
+P 4700 4350
+F 0 "#FLG08" H 4700 4445 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 4530 50  0000 C CNN
+F 2 "" H 4700 4350 50  0000 C CNN
+F 3 "" H 4700 4350 50  0000 C CNN
+	1    4700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG09
+U 1 1 5BC900D5
+P 6500 4450
+F 0 "#FLG09" H 6500 4545 50  0001 C CNN
+F 1 "PWR_FLAG" H 6500 4630 50  0000 C CNN
+F 2 "" H 6500 4450 50  0000 C CNN
+F 3 "" H 6500 4450 50  0000 C CNN
+	1    6500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4350 6300 4350
+Wire Wire Line
+	6300 4350 6300 4550
+Wire Wire Line
+	6300 4550 6500 4550
+Wire Wire Line
+	6500 4550 6500 4450
+Connection ~ 6100 4350
+Wire Wire Line
+	4700 4350 4700 4500
+Wire Wire Line
+	4700 4500 5150 4500
+Connection ~ 5150 4500
+Wire Wire Line
+	5150 3400 5150 3550
+Wire Wire Line
+	5150 3400 5450 3400
+Wire Wire Line
+	5150 3900 5150 3850
+Wire Wire Line
+	5150 3300 5150 3400
+Wire Wire Line
+	6100 4350 6100 4300
+Wire Wire Line
+	5150 4500 5150 4300
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 5C645731
+P 2350 1100
+F 0 "U2" H 2350 1342 50  0000 C CNN
+F 1 "L7805" H 2350 1251 50  0000 C CNN
+F 2 "" H 2375 950 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2350 1050 50  0001 C CNN
+	1    2350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PressureMBoard-rescue:C_Small C4
+U 1 1 5C6459EE
+P 3000 1350
+F 0 "C4" H 3010 1420 50  0000 L CNN
+F 1 "0.1u" H 3010 1270 50  0000 L CNN
+F 2 "" H 3000 1350 50  0000 C CNN
+F 3 "" H 3000 1350 50  0000 C CNN
+F 4 "Value" H 3000 1350 60  0001 C CNN "Digikey#"
+F 5 "Value" H 3000 1350 60  0001 C CNN "LibPart"
+F 6 "Value" H 3000 1350 60  0001 C CNN "Manf"
+F 7 "Value" H 3000 1350 60  0001 C CNN "Manf#"
+F 8 "Value" H 3000 1350 60  0001 C CNN "Mouser#"
+	1    3000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PressureMBoard-rescue:C_Small C3
+U 1 1 5C645ADA
+P 1600 1300
+F 0 "C3" H 1610 1370 50  0000 L CNN
+F 1 "0.1u" H 1610 1220 50  0000 L CNN
+F 2 "" H 1600 1300 50  0000 C CNN
+F 3 "" H 1600 1300 50  0000 C CNN
+F 4 "Value" H 1600 1300 60  0001 C CNN "Digikey#"
+F 5 "Value" H 1600 1300 60  0001 C CNN "LibPart"
+F 6 "Value" H 1600 1300 60  0001 C CNN "Manf"
+F 7 "Value" H 1600 1300 60  0001 C CNN "Manf#"
+F 8 "Value" H 1600 1300 60  0001 C CNN "Mouser#"
+	1    1600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C645B3B
+P 2350 1600
+F 0 "#PWR0101" H 2350 1350 50  0001 C CNN
+F 1 "GND" H 2350 1450 50  0000 C CNN
+F 2 "" H 2350 1600 50  0000 C CNN
+F 3 "" H 2350 1600 50  0000 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1600 2350 1400
+Wire Wire Line
+	2650 1100 3000 1100
+Wire Wire Line
+	3000 1100 3000 1250
+Wire Wire Line
+	1600 1100 1600 1200
+$Comp
+L power:GND #PWR0102
+U 1 1 5C647035
+P 1600 1600
+F 0 "#PWR0102" H 1600 1350 50  0001 C CNN
+F 1 "GND" H 1600 1450 50  0000 C CNN
+F 2 "" H 1600 1600 50  0000 C CNN
+F 3 "" H 1600 1600 50  0000 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C647052
+P 3000 1600
+F 0 "#PWR0103" H 3000 1350 50  0001 C CNN
+F 1 "GND" H 3000 1450 50  0000 C CNN
+F 2 "" H 3000 1600 50  0000 C CNN
+F 3 "" H 3000 1600 50  0000 C CNN
+	1    3000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1600 3000 1450
+Wire Wire Line
+	1600 1400 1600 1500
+$Comp
+L Connector:Jack-DC J1
+U 1 1 5C64816B
+P 1000 1200
+F 0 "J1" H 1055 1525 50  0000 C CNN
+F 1 "Jack-DC" H 1055 1434 50  0000 C CNN
+F 2 "" H 1050 1160 50  0001 C CNN
+F 3 "~" H 1050 1160 50  0001 C CNN
+	1    1000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1100 1600 1100
+Wire Wire Line
+	1300 1300 1400 1300
+Wire Wire Line
+	1400 1300 1400 1500
+Wire Wire Line
+	1400 1500 1600 1500
+Connection ~ 1600 1500
+Wire Wire Line
+	1600 1500 1600 1600
+Wire Notes Line
+	600  2100 3400 2100
+Wire Notes Line
+	3400 600  600  600 
+Wire Notes Line
+	600  600  600  2100
+Text Notes 1300 800  0    50   ~ 0
+Fuente de Alimentación\n(DC Power Supply)
+Wire Wire Line
+	2050 1100 1600 1100
+Connection ~ 1600 1100
+Wire Notes Line
+	3400 2100 3400 600 
+$EndSCHEMATC
