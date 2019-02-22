@@ -1,0 +1,356 @@
+EESchema Schematic File Version 4
+LIBS:PressureBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:MCP6002-xP U1
+U 1 1 5C6EFD7A
+P 5850 2800
+F 0 "U1" H 5850 3167 50  0000 C CNN
+F 1 "MCP6002-xP" H 5850 3076 50  0000 C CNN
+F 2 "" H 5850 2800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5C6EFE0D
+P 5750 2150
+F 0 "#PWR0101" H 5750 2000 50  0001 C CNN
+F 1 "+5V" H 5765 2323 50  0000 C CNN
+F 2 "" H 5750 2150 50  0001 C CNN
+F 3 "" H 5750 2150 50  0001 C CNN
+	1    5750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6002-xP U1
+U 3 1 5C6F00E4
+P 5850 2800
+F 0 "U1" H 5808 2846 50  0000 L CNN
+F 1 "MCP6002-xP" H 5808 2755 50  0000 L CNN
+F 2 "" H 5850 2800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5850 2800 50  0001 C CNN
+	3    5850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3100 5750 3200
+$Comp
+L power:GNDA #PWR0102
+U 1 1 5C6F02AE
+P 5750 3250
+F 0 "#PWR0102" H 5750 3000 50  0001 C CNN
+F 1 "GNDA" H 5755 3077 50  0000 C CNN
+F 2 "" H 5750 3250 50  0001 C CNN
+F 3 "" H 5750 3250 50  0001 C CNN
+	1    5750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C6F038D
+P 4600 2500
+F 0 "R1" H 4670 2546 50  0000 L CNN
+F 1 "10K" H 4670 2455 50  0000 L CNN
+F 2 "" V 4530 2500 50  0001 C CNN
+F 3 "~" H 4600 2500 50  0001 C CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C6F03DF
+P 4600 3100
+F 0 "R2" H 4670 3146 50  0000 L CNN
+F 1 "20K" H 4670 3055 50  0000 L CNN
+F 2 "" V 4530 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C6F0411
+P 4600 1950
+F 0 "#PWR0103" H 4600 1800 50  0001 C CNN
+F 1 "+5V" H 4615 2123 50  0000 C CNN
+F 2 "" H 4600 1950 50  0001 C CNN
+F 3 "" H 4600 1950 50  0001 C CNN
+	1    4600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5C6F0653
+P 4100 2400
+F 0 "C1" H 4192 2446 50  0000 L CNN
+F 1 "0.1u" H 4192 2355 50  0000 L CNN
+F 2 "" H 4100 2400 50  0001 C CNN
+F 3 "~" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5C6F0681
+P 4950 2400
+F 0 "C2" H 5042 2446 50  0000 L CNN
+F 1 "0.001u" H 5042 2355 50  0000 L CNN
+F 2 "" H 4950 2400 50  0001 C CNN
+F 3 "~" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C6F0774
+P 4600 3450
+F 0 "#PWR0105" H 4600 3200 50  0001 C CNN
+F 1 "GND" H 4605 3277 50  0000 C CNN
+F 2 "" H 4600 3450 50  0001 C CNN
+F 3 "" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2900 5300 2900
+Wire Wire Line
+	5300 2900 5300 3600
+Wire Wire Line
+	5300 3600 6700 3600
+Wire Wire Line
+	6700 3600 6700 2800
+Wire Wire Line
+	6700 2800 6150 2800
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C6F0A89
+P 6250 3150
+F 0 "#FLG0101" H 6250 3225 50  0001 C CNN
+F 1 "PWR_FLAG" H 6250 3324 50  0000 C CNN
+F 2 "" H 6250 3150 50  0001 C CNN
+F 3 "~" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3150 6250 3200
+Wire Wire Line
+	6250 3200 5750 3200
+Connection ~ 5750 3200
+Wire Wire Line
+	5750 3200 5750 3250
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C6F0C75
+P 4100 3250
+F 0 "#FLG0102" H 4100 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 3424 50  0000 C CNN
+F 2 "" H 4100 3250 50  0001 C CNN
+F 3 "~" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C6F0C8E
+P 4100 2650
+F 0 "#PWR0106" H 4100 2400 50  0001 C CNN
+F 1 "GND" H 4105 2477 50  0000 C CNN
+F 2 "" H 4100 2650 50  0001 C CNN
+F 3 "" H 4100 2650 50  0001 C CNN
+	1    4100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5C6F0CA7
+P 4950 2650
+F 0 "#PWR0107" H 4950 2400 50  0001 C CNN
+F 1 "GND" H 4955 2477 50  0000 C CNN
+F 2 "" H 4950 2650 50  0001 C CNN
+F 3 "" H 4950 2650 50  0001 C CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3450 4600 3350
+Wire Wire Line
+	4600 2650 4600 2750
+Wire Wire Line
+	4100 2200 4100 2300
+Connection ~ 4600 2200
+Wire Wire Line
+	4600 2200 4600 2350
+Wire Wire Line
+	4950 2200 4950 2300
+Wire Wire Line
+	4950 2500 4950 2650
+Wire Wire Line
+	4100 2500 4100 2650
+Wire Wire Line
+	4100 3250 4100 3350
+Wire Wire Line
+	4100 3350 4600 3350
+Connection ~ 4600 3350
+Wire Wire Line
+	4600 3350 4600 3250
+Wire Wire Line
+	5550 2700 5100 2700
+Wire Wire Line
+	5100 2700 5100 2900
+Wire Wire Line
+	5100 2900 4750 2900
+Wire Wire Line
+	4750 2900 4750 2750
+Wire Wire Line
+	4750 2750 4600 2750
+Connection ~ 4600 2750
+Wire Wire Line
+	4600 2750 4600 2950
+Wire Wire Line
+	4600 2200 4950 2200
+Wire Wire Line
+	5750 2500 5750 2350
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C6F327A
+P 6200 2300
+F 0 "#FLG0103" H 6200 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 6200 2474 50  0000 C CNN
+F 2 "" H 6200 2300 50  0001 C CNN
+F 3 "~" H 6200 2300 50  0001 C CNN
+	1    6200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2350 6200 2350
+Wire Wire Line
+	6200 2350 6200 2300
+Connection ~ 5750 2350
+Wire Wire Line
+	4100 2200 4600 2200
+Wire Wire Line
+	5750 2150 5750 2350
+Wire Wire Line
+	4600 1950 4600 2200
+Text Notes 5250 2650 0    50   ~ 0
+3,3v
+$Comp
+L Regulator_Linear:L78L05_TO92 U2
+U 1 1 5C6F58BE
+P 2300 1150
+F 0 "U2" H 2300 1392 50  0000 C CNN
+F 1 "L78L05_TO92" H 2300 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2300 1375 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 2300 1100 50  0001 C CNN
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5C6F59A4
+P 2300 1750
+F 0 "#PWR01" H 2300 1500 50  0001 C CNN
+F 1 "GND" H 2305 1577 50  0000 C CNN
+F 2 "" H 2300 1750 50  0001 C CNN
+F 3 "" H 2300 1750 50  0001 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Jack-DC J1
+U 1 1 5C6F5B2B
+P 1250 1250
+F 0 "J1" H 1305 1575 50  0000 C CNN
+F 1 "Jack-DC" H 1305 1484 50  0000 C CNN
+F 2 "" H 1300 1210 50  0001 C CNN
+F 3 "~" H 1300 1210 50  0001 C CNN
+	1    1250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5C6F60D9
+P 1800 1400
+F 0 "C3" H 1892 1446 50  0000 L CNN
+F 1 "330n" H 1892 1355 50  0000 L CNN
+F 2 "" H 1800 1400 50  0001 C CNN
+F 3 "~" H 1800 1400 50  0001 C CNN
+	1    1800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5C6F6145
+P 2800 1350
+F 0 "C4" H 2892 1396 50  0000 L CNN
+F 1 "0.1u" H 2892 1305 50  0000 L CNN
+F 2 "" H 2800 1350 50  0001 C CNN
+F 3 "~" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1250 2800 1150
+Wire Wire Line
+	2800 1150 2600 1150
+Wire Wire Line
+	2300 1750 2300 1650
+Wire Wire Line
+	2300 1650 2800 1650
+Wire Wire Line
+	2800 1650 2800 1450
+Connection ~ 2300 1650
+Wire Wire Line
+	2300 1650 2300 1450
+Wire Wire Line
+	2300 1650 1800 1650
+Wire Wire Line
+	1800 1650 1800 1500
+Wire Wire Line
+	1800 1300 1800 1150
+Wire Wire Line
+	1800 1150 1550 1150
+Wire Wire Line
+	1550 1350 1650 1350
+Wire Wire Line
+	1650 1350 1650 1650
+Wire Wire Line
+	1650 1650 1800 1650
+Connection ~ 1800 1650
+Text Notes 1750 800  0    50   ~ 0
+DC Power Supply
+Wire Wire Line
+	1800 1150 2000 1150
+Connection ~ 1800 1150
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5C6FCADA
+P 1800 1050
+F 0 "#FLG0104" H 1800 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 1224 50  0000 C CNN
+F 2 "" H 1800 1050 50  0001 C CNN
+F 3 "~" H 1800 1050 50  0001 C CNN
+	1    1800 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1050 1800 1150
+Text Notes 1400 2400 0    50   ~ 0
+ADSX Pressure Sensor
+$EndSCHEMATC
