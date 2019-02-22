@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASDXACX030PAAA5
+D Low pressure an ultra-low pressure analog output sensor
+K 5.0 Vdc, 33psi
+F https://sensing.honeywell.com/honeywell-sensing-asdx-series-analog-pressure-sensors-product-sheet-008090-12-en.pdf
+$ENDCMP
+#
+#End Doc Library
