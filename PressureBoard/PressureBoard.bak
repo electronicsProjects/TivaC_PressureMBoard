@@ -320,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 1650 1800 1650
 Connection ~ 1800 1650
-Text Notes 1750 800  0    50   ~ 0
+Text Notes 1900 750  0    50   ~ 0
 DC Power Supply
 Wire Wire Line
 	1800 1150 2000 1150
@@ -341,7 +341,7 @@ Wire Wire Line
 Text Notes 1700 2350 0    50   ~ 0
 ADSX Pressure Sensor
 Text Notes 7650 2200 0    50   ~ 0
-Anti Aliasing Filter
+Anti Aliasing Filter\n   Fc = 1KHz
 $Comp
 L ASDX:ASDXACX030PAAA5 U3
 U 1 1 5C6F9F9D
@@ -530,4 +530,20 @@ Wire Wire Line
 Wire Wire Line
 	3250 1650 3250 1450
 Connection ~ 2800 1650
+Wire Wire Line
+	6600 3250 7000 3250
+Connection ~ 6600 3250
+Text Notes 6700 3150 0    50   ~ 0
+ADC-TivaC123g
+$Comp
+L Device:R R?
+U 1 1 5C71B288
+P 7400 3250
+F 0 "R?" V 7607 3250 50  0000 C CNN
+F 1 "470" V 7516 3250 50  0000 C CNN
+F 2 "" V 7330 3250 50  0001 C CNN
+F 3 "~" H 7400 3250 50  0001 C CNN
+	1    7400 3250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

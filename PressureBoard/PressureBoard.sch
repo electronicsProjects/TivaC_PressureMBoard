@@ -413,23 +413,23 @@ Acondicionamiento de Impedancia-voltaje\nde 5 - 3,3v
 $Comp
 L Amplifier_Operational:MCP6002-xP U1
 U 2 1 5C701FA7
-P 7950 2850
-F 0 "U1" H 7950 3217 50  0000 C CNN
-F 1 "MCP6002-xP" H 7950 3126 50  0000 C CNN
-F 2 "" H 7950 2850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7950 2850 50  0001 C CNN
-	2    7950 2850
+P 8850 3500
+F 0 "U1" H 8850 3867 50  0000 C CNN
+F 1 "MCP6002-xP" H 8850 3776 50  0000 C CNN
+F 2 "" H 8850 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 8850 3500 50  0001 C CNN
+	2    8850 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:MCP6002-xP U4
 U 3 1 5C70202A
-P 7950 2850
-F 0 "U4" H 7908 2896 50  0000 L CNN
-F 1 "MCP6002-xP" H 7908 2805 50  0000 L CNN
-F 2 "" H 7950 2850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7950 2850 50  0001 C CNN
-	3    7950 2850
+P 8850 3500
+F 0 "U4" H 8808 3546 50  0000 L CNN
+F 1 "MCP6002-xP" H 8808 3455 50  0000 L CNN
+F 2 "" H 8850 3500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 8850 3500 50  0001 C CNN
+	3    8850 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -530,20 +530,158 @@ Wire Wire Line
 Wire Wire Line
 	3250 1650 3250 1450
 Connection ~ 2800 1650
-Wire Wire Line
-	6600 3250 7000 3250
 Connection ~ 6600 3250
-Text Notes 6700 3150 0    50   ~ 0
+Text Notes 6550 3100 0    50   ~ 0
 ADC-TivaC123g
 $Comp
 L Device:R R?
 U 1 1 5C71B288
-P 7400 3250
-F 0 "R?" V 7607 3250 50  0000 C CNN
-F 1 "470" V 7516 3250 50  0000 C CNN
-F 2 "" V 7330 3250 50  0001 C CNN
-F 3 "~" H 7400 3250 50  0001 C CNN
-	1    7400 3250
+P 7250 3250
+F 0 "R?" V 7457 3250 50  0000 C CNN
+F 1 "470" V 7366 3250 50  0000 C CNN
+F 2 "" V 7180 3250 50  0001 C CNN
+F 3 "~" H 7250 3250 50  0001 C CNN
+	1    7250 3250
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C79D65E
+P 8750 2850
+F 0 "#PWR?" H 8750 2700 50  0001 C CNN
+F 1 "+5V" H 8765 3023 50  0000 C CNN
+F 2 "" H 8750 2850 50  0001 C CNN
+F 3 "" H 8750 2850 50  0001 C CNN
+	1    8750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C79D68D
+P 9150 2950
+F 0 "#FLG?" H 9150 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 3124 50  0000 C CNN
+F 2 "" H 9150 2950 50  0001 C CNN
+F 3 "~" H 9150 2950 50  0001 C CNN
+	1    9150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C79D6BC
+P 8750 4000
+F 0 "#PWR?" H 8750 3750 50  0001 C CNN
+F 1 "GNDA" H 8755 3827 50  0000 C CNN
+F 2 "" H 8750 4000 50  0001 C CNN
+F 3 "" H 8750 4000 50  0001 C CNN
+	1    8750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C79D6EB
+P 9150 3850
+F 0 "#FLG?" H 9150 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 4024 50  0000 C CNN
+F 2 "" H 9150 3850 50  0001 C CNN
+F 3 "~" H 9150 3850 50  0001 C CNN
+	1    9150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3200 8750 3050
+Wire Wire Line
+	9150 3050 8750 3050
+Connection ~ 8750 3050
+Wire Wire Line
+	8750 3050 8750 2850
+Wire Wire Line
+	9150 3050 9150 2950
+Wire Wire Line
+	8750 3800 8750 3950
+Wire Wire Line
+	9150 3850 9150 3950
+Wire Wire Line
+	9150 3950 8750 3950
+Connection ~ 8750 3950
+Wire Wire Line
+	8750 3950 8750 4000
+$Comp
+L Device:C_Small C?
+U 1 1 5C7A4F96
+P 8000 3600
+F 0 "C?" H 8092 3646 50  0000 L CNN
+F 1 "0.1u" H 8092 3555 50  0000 L CNN
+F 2 "" H 8000 3600 50  0001 C CNN
+F 3 "~" H 8000 3600 50  0001 C CNN
+	1    8000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C7A5122
+P 7800 3900
+F 0 "#PWR?" H 7800 3650 50  0001 C CNN
+F 1 "GND" H 7805 3727 50  0000 C CNN
+F 2 "" H 7800 3900 50  0001 C CNN
+F 3 "" H 7800 3900 50  0001 C CNN
+	1    7800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C7A5153
+P 7600 3600
+F 0 "C?" H 7692 3646 50  0000 L CNN
+F 1 "0.12u" H 7692 3555 50  0000 L CNN
+F 2 "" H 7600 3600 50  0001 C CNN
+F 3 "~" H 7600 3600 50  0001 C CNN
+	1    7600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3250 7100 3250
+Wire Wire Line
+	8000 3700 8000 3800
+Wire Wire Line
+	8000 3800 7800 3800
+Wire Wire Line
+	7600 3800 7600 3700
+Wire Wire Line
+	7800 3900 7800 3800
+Connection ~ 7800 3800
+Wire Wire Line
+	7800 3800 7600 3800
+Wire Wire Line
+	7600 3500 7600 3350
+Wire Wire Line
+	7600 3350 7800 3350
+Wire Wire Line
+	8000 3350 8000 3500
+Wire Wire Line
+	7400 3250 7800 3250
+Wire Wire Line
+	7800 3250 7800 3350
+Connection ~ 7800 3350
+Wire Wire Line
+	7800 3350 8000 3350
+Wire Wire Line
+	7800 3250 8250 3250
+Wire Wire Line
+	8250 3250 8250 3400
+Wire Wire Line
+	8250 3400 8550 3400
+Connection ~ 7800 3250
+Wire Wire Line
+	8550 3600 8400 3600
+Wire Wire Line
+	8400 3600 8400 4300
+Wire Wire Line
+	8400 4300 9650 4300
+Wire Wire Line
+	9650 4300 9650 3500
+Wire Wire Line
+	9650 3500 9150 3500
+Text Notes 9350 3450 0    50   ~ 0
+ADC-TivaC123g
 $EndSCHEMATC
